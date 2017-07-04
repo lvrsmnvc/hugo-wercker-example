@@ -30,11 +30,10 @@ build:
  
 deploy:
   steps:
-    - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: 55c7126eadde94fb9bc869a4fc224047c93194d4
-        password: diegoRecoba8*
-        domain: lvrsmnvc/hugo-wercker-example/some
-        basedir: public       
-        
+     - install-packages:
+      packages: git ssh-client
+    - leipert/git-push:
+       gh_oauth: 55c7126eadde94fb9bc869a4fc224047c93194d4
+       repo: lvrsmnvc/hugo-wercker-example.github.io
+       branch: master
+       basedir: public
