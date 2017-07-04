@@ -34,7 +34,7 @@ deploy:
         packages: git ssh-client
     - lukevivier/gh-pages@0.2.1:
         token: bedaf7b2e932af1642ae378eab8dd598874c1e16
-        domain: https://github.com/lvrsmnvc/hugo-wercker-example
+        domain: lvrsmnvc/hugo-wercker-example
         basedir: public
         
         
