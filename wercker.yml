@@ -33,7 +33,6 @@ deploy:
     - install-packages:
         packages: git ssh-client
     - leipert/git-push:
-       gh_oauth: GIT_TOKEN
        repo: lvrsmnvc/hugo-wercker-example.github.io
        branch: master
        basedir: public
