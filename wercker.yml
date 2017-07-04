@@ -34,6 +34,6 @@ deploy:
         packages: git ssh-client
     - leipert/git-push:
        gh_oauth: 37b58a691e7e4c73cf7763a28ed2d70144a80111
-       repo: lvrsmnvc/hugo-wercker-example.github.io
+       repo: hugo-wercker-example/lvrsmnvc.github.io
        branch: master
        basedir: public
